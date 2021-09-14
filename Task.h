@@ -5,12 +5,14 @@
 
 class Task {
  protected:
-  std::string name;
+  
   std::string assignee;
   std::string description;
   Task* parent;
-
+  std::string name;
+  
  public:
+
   void setName(std::string name) {
     this->name = name;
   }

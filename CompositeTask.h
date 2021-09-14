@@ -7,10 +7,10 @@
 class CompositeTask : public Task{
  private:
   std::vector<Task*> tasks;
-
  public:
   void addTask(std::string name) override;
   void removeTask();
+  CompositeTask(std::string name);
 };
 
 #endif  // COMPOSITE_TASK_H
