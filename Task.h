@@ -6,7 +6,7 @@
 class Task {
  protected:
   std::string name;
-  std::string inCharge;
+  std::string assignee;
   std::string description;
 
  public:
@@ -18,11 +18,13 @@ class Task {
     return this->name;
   }
 
-  void setInCharge(std::string inCharge) {
-    this->inCharge = inCharge;
+  void setAssignee(std::string assignee) {
+    this->assignee = assignee;
   }
 
-  virtual std::string getInCharge() = 0;
+  virtual std::string getAssignee() {
+    return this->assignee;
+  }
 
   void setDescription(std::string description) {
     this->description = description;
