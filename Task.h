@@ -8,6 +8,7 @@ class Task {
   std::string name;
   std::string assignee;
   std::string description;
+  Task* parent;
 
  public:
   void setName(std::string name) {
@@ -33,6 +34,8 @@ class Task {
   std::string getDescription() {
     return this->name;
   }
+
+  virtual void addTask(std::string name) = 0;
 };
 
 #endif  // TASK_H

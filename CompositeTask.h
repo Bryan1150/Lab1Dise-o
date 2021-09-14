@@ -9,9 +9,8 @@ class CompositeTask : public Task{
   std::vector<Task*> tasks;
 
  public:
-  void addTask(Task* task);
+  void addTask(std::string name) override;
   void removeTask();
-
 };
 
 #endif  // COMPOSITE_TASK_H
