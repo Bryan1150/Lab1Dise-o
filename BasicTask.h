@@ -11,8 +11,8 @@ class BasicTask : public Task{
   
  public:
   void addTask(std::string name) override;
+  std::array<int, 6> computeDates() override;
   BasicTask(std::string name);
-  Task* parent;
 };
 
 #endif  // COMPOSITE_TASK_H

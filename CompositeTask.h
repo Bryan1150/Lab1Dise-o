@@ -9,8 +9,11 @@ class CompositeTask : public Task{
   std::vector<Task*> tasks;
  public:
   void addTask(std::string name) override;
-  void removeTask();
+  std::array<int, 6> computeDates() override;
+  void removeTask(std::string name);
   CompositeTask(std::string name);
+  CompositeTask(std::string name, std::string assignee, std::string description, CompositeTask* parent);
+  std::vector<Task*>* getTasks();
 };
 
 #endif  // COMPOSITE_TASK_H

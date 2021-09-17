@@ -12,7 +12,8 @@ class ProjectManager {
  public:
  void CreateProject(std::string name, std::string inCharge);
  void removeProject(std::string name);
- 
+ //std::string seeTree(std::string name);
+
 };
 
 #endif  // PROJECT_MANAGER_H
